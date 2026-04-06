@@ -34,7 +34,7 @@ export function KnowledgeGraphSection() {
           </p>
         </div>
 
-        <div className="mt-16 grid items-center gap-12 lg:grid-cols-[minmax(0,0.95fr)_minmax(0,1.05fr)]">
+        <div className="mt-16 grid gap-12 lg:grid-cols-[minmax(0,0.95fr)_minmax(0,1.05fr)] lg:items-stretch">
           <div className="order-2 space-y-6 text-base leading-relaxed text-slate-200 lg:order-1">
             <div className="rounded-xl border border-blue-300/20 bg-blue-500/10 px-4 py-3 text-sm text-blue-100">
               <span className="font-semibold text-white">Orchestration layer:</span>{" "}
@@ -99,11 +99,11 @@ export function KnowledgeGraphSection() {
           </div>
 
           <div className="order-1 lg:order-2">
-            <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-7 shadow-2xl shadow-black/35 backdrop-blur-md">
+            <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-7 shadow-2xl shadow-black/35 backdrop-blur-md lg:flex lg:h-full lg:flex-col">
               <p className="text-center text-xs font-semibold uppercase tracking-wider text-slate-400">
                 Agent graph + knowledge retrieval
               </p>
-              <div className="mt-4 aspect-[16/10] w-full">
+              <div className="mt-4 aspect-[16/10] w-full lg:flex-1">
                 <svg
                   viewBox="0 0 440 352"
                   className="h-full w-full"
