@@ -1,18 +1,38 @@
 const steps = [
   {
     n: "01",
-    title: "Capture the stop",
-    body: "Short form on phone or desktop: machine, symptom, alarm code, optional photo. No new habits for night shifts.",
+    title: "Ticket opens",
+    body: "Alarm, asset, and location are ingested from your existing service flow.",
   },
   {
     n: "02",
-    title: "Triage with context",
-    body: "Wert AI combines your manuals, past work orders, and expert rules to suggest likely causes and safe checks — with citations.",
+    title: "Context assembled",
+    body: "Machine history, configuration, and similar prior cases are attached automatically.",
   },
   {
     n: "03",
-    title: "Act with clarity",
-    body: "Share a concise brief with internal staff or external service: checklist done, parts to bring, and when to escalate.",
+    title: "Evidence identified",
+    body: "Missing diagnostic evidence is flagged before a technician is committed.",
+  },
+  {
+    n: "04",
+    title: "Diagnosis generated",
+    body: "Likely root causes are ranked with confidence and source citations.",
+  },
+  {
+    n: "05",
+    title: "Dispatch risk scored",
+    body: "Repeat-visit probability is estimated to avoid blind truck rolls.",
+  },
+  {
+    n: "06",
+    title: "Technician prepared",
+    body: "Recommended profile, likely parts, and pre-visit checklist are generated.",
+  },
+  {
+    n: "07",
+    title: "Decision written back",
+    body: "Final verdict is pushed into SAP, ServiceNow, remberg, or your current platform.",
   },
 ];
 
@@ -24,13 +44,13 @@ export function HowItWorks() {
     >
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <h2 className="text-center text-4xl font-bold tracking-tight text-foreground sm:text-5xl">
-          How it works
+          Pre-dispatch workflow
         </h2>
         <p className="mx-auto mt-4 max-w-3xl text-center text-lg text-muted">
-          Three steps from chaos to a clear first response — without replacing
-          your CMMS or ticketing on day one.
+          One workflow before every dispatch. TriageOS sits between ticket
+          creation and technician dispatch.
         </p>
-        <ol className="mt-16 grid gap-10 md:grid-cols-3">
+        <ol className="mt-16 grid gap-8 md:grid-cols-2 xl:grid-cols-4">
           {steps.map((s) => (
             <li
               key={s.n}

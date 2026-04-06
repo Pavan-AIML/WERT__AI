@@ -8,71 +8,78 @@ export function KnowledgeGraphSection() {
         className="pointer-events-none absolute inset-0 opacity-50 animate-hero-blob"
         style={{
           backgroundImage:
-            "radial-gradient(ellipse 70% 50% at 15% 20%, rgba(56, 189, 248, 0.12), transparent), radial-gradient(ellipse 60% 45% at 85% 80%, rgba(20, 184, 166, 0.2), transparent)",
+            "radial-gradient(ellipse 70% 50% at 15% 20%, rgba(37, 99, 235, 0.12), transparent), radial-gradient(ellipse 60% 45% at 85% 80%, rgba(15, 118, 110, 0.18), transparent)",
         }}
         aria-hidden
       />
       <div className="relative mx-auto max-w-6xl px-4 sm:px-6">
         <div className="mx-auto max-w-3xl text-center">
-          <p className="text-sm font-semibold uppercase tracking-wider text-teal-300/90">
-            Why a knowledge graph (not “just chat”)
+          <p className="text-sm font-semibold uppercase tracking-wider text-emerald-300/90">
+            Multi-agent + knowledge graph architecture
           </p>
           <h2 className="mt-3 text-4xl font-bold tracking-tight sm:text-5xl">
-            Connect symptoms, assets, and evidence — the way experts already
-            think
+            How our multi-agent system resolves downtime faster
           </h2>
           <p className="mt-4 text-xl leading-relaxed text-slate-200">
-            Generative UI alone can sound convincing without being right. Wert
-            AI pairs structured machine context with a{" "}
+            On real shop floors, teams ask practical questions:{" "}
+            <strong className="font-semibold text-white">
+              which part, which check, and what should the mechanic bring?
+            </strong>{" "}
+            Wert AI combines specialized agents with a{" "}
             <strong className="font-semibold text-white">
               maintenance knowledge graph
-            </strong>
-            : entities (lines, alarms, procedures, parts, work orders) and
-            relationships your team trusts. Retrieval and ranking stay
-            traceable for audits, pilots, and EXIST-style scrutiny.
+            </strong>{" "}
+            so every recommendation is source-backed, role-aware, and ready for
+            action.
           </p>
         </div>
 
-        <div className="mt-16 grid items-center gap-12 lg:grid-cols-2">
+        <div className="mt-16 grid items-center gap-12 lg:grid-cols-[minmax(0,0.95fr)_minmax(0,1.05fr)]">
           <div className="order-2 space-y-6 text-base leading-relaxed text-slate-200 lg:order-1">
+            <div className="rounded-xl border border-blue-300/20 bg-blue-500/10 px-4 py-3 text-sm text-blue-100">
+              <span className="font-semibold text-white">Orchestration layer:</span>{" "}
+              routes tasks between agents, scores confidence, and escalates
+              uncertain cases for human confirmation.
+            </div>
             <div className="rounded-2xl border border-white/10 bg-white/[0.04] p-6 backdrop-blur-sm">
               <h3 className="text-xl font-semibold text-white">
                 What the graph unlocks
               </h3>
               <ul className="mt-4 space-y-3">
                 <li className="flex gap-3">
-                  <span className="font-bold text-teal-400" aria-hidden>
+                  <span className="font-bold text-emerald-400" aria-hidden>
                     →
                   </span>
                   <span>
                     <strong className="text-slate-100">Faster triage:</strong>{" "}
-                    traverse from symptom to likely causes via documented links,
-                    not keyword luck.
+                    intake and diagnosis agents traverse documented links, not
+                    keyword guesswork.
                   </span>
                 </li>
                 <li className="flex gap-3">
-                  <span className="font-bold text-sky-400" aria-hidden>
+                  <span className="font-bold text-blue-300" aria-hidden>
                     →
                   </span>
                   <span>
                     <strong className="text-slate-100">Fewer wrong visits:</strong>{" "}
-                    parts and tools attach to procedures and past resolutions.
+                    planning and evidence agents attach parts, tools, and steps
+                    before dispatch.
                   </span>
                 </li>
                 <li className="flex gap-3">
-                  <span className="font-bold text-teal-400" aria-hidden>
+                  <span className="font-bold text-emerald-400" aria-hidden>
                     →
                   </span>
                   <span>
-                    <strong className="text-slate-100">Funding story:</strong>{" "}
-                    explicit data model + evaluation — easier to defend than a
-                    black-box assistant.
+                    <strong className="text-slate-100">Consistent execution:</strong>{" "}
+                    orchestrated handoffs keep decisions consistent across shifts
+                    and sites.
                   </span>
                 </li>
               </ul>
             </div>
-            <p className="rounded-xl border border-teal-400/20 bg-teal-500/10 px-4 py-3 text-base text-teal-100">
-              For EXIST reviewers: we combine{" "}
+            <p className="rounded-xl border border-emerald-400/20 bg-emerald-500/10 px-4 py-3 text-base text-emerald-100">
+              We combine{" "}
               <span className="font-medium text-white">
                 domain structure (graph)
               </span>{" "}
@@ -82,14 +89,21 @@ export function KnowledgeGraphSection() {
               </span>
               , with citations back to your sources.
             </p>
+            <div className="rounded-xl border border-white/10 bg-white/[0.03] px-4 py-3 text-sm text-slate-300">
+              Example scenario:{" "}
+              <span className="text-slate-100">Conveyor stop + alarm A17</span>{" "}
+              {"->"} Intake Agent captures symptoms {"->"} Diagnosis Agent ranks
+              causes {"->"} Evidence Agent cites manual section + past WO {"->"}{" "}
+              Planner Agent outputs parts and checklist.
+            </div>
           </div>
 
           <div className="order-1 lg:order-2">
-            <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-6 shadow-2xl backdrop-blur-md">
+            <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-7 shadow-2xl shadow-black/35 backdrop-blur-md">
               <p className="text-center text-xs font-semibold uppercase tracking-wider text-slate-400">
-                Graph + retrieval (concept)
+                Agent graph + knowledge retrieval
               </p>
-              <div className="mt-4 aspect-[5/4] w-full">
+              <div className="mt-4 aspect-[16/10] w-full">
                 <svg
                   viewBox="0 0 440 352"
                   className="h-full w-full"
@@ -99,8 +113,8 @@ export function KnowledgeGraphSection() {
                 >
                   <defs>
                     <linearGradient id="kg-edge" x1="0" y1="0" x2="1" y2="1">
-                      <stop offset="0%" stopColor="rgb(45, 212, 191)" stopOpacity="0.35" />
-                      <stop offset="100%" stopColor="rgb(56, 189, 248)" stopOpacity="0.9" />
+                      <stop offset="0%" stopColor="rgb(16, 185, 129)" stopOpacity="0.35" />
+                      <stop offset="100%" stopColor="rgb(96, 165, 250)" stopOpacity="0.85" />
                     </linearGradient>
                   </defs>
                   <g
@@ -153,71 +167,71 @@ export function KnowledgeGraphSection() {
                   <g>
                     <rect
                       x="48"
-                      y="156"
-                      width="80"
-                      height="40"
+                      y="152"
+                      width="88"
+                      height="46"
                       rx="10"
-                      className="graph-node-pulse fill-teal-500/20 stroke-teal-300/80"
+                      className="graph-node-pulse fill-emerald-500/20 stroke-emerald-300/80"
                       strokeWidth="1.2"
                     />
                     <rect
                       x="180"
-                      y="156"
-                      width="80"
-                      height="40"
+                      y="152"
+                      width="92"
+                      height="46"
                       rx="10"
-                      className="graph-node-pulse fill-sky-500/15 stroke-sky-300/75"
+                      className="graph-node-pulse fill-blue-500/15 stroke-blue-300/75"
                       style={{ animationDelay: "-0.5s" }}
                       strokeWidth="1.2"
                     />
                     <rect
                       x="152"
-                      y="72"
-                      width="72"
-                      height="36"
+                      y="68"
+                      width="82"
+                      height="40"
                       rx="9"
-                      fill="rgb(15 118 110 / 0.25)"
-                      stroke="rgb(94 234 212 / 0.75)"
+                      fill="rgb(6 95 70 / 0.32)"
+                      stroke="rgb(110 231 183 / 0.8)"
                       strokeWidth="1"
                     />
                     <rect
                       x="152"
-                      y="244"
-                      width="72"
-                      height="36"
+                      y="240"
+                      width="82"
+                      height="40"
                       rx="9"
-                      fill="rgb(15 118 110 / 0.25)"
-                      stroke="rgb(94 234 212 / 0.75)"
+                      fill="rgb(6 95 70 / 0.32)"
+                      stroke="rgb(110 231 183 / 0.8)"
                       strokeWidth="1"
                     />
                     <rect
                       x="288"
-                      y="88"
-                      width="76"
-                      height="36"
+                      y="84"
+                      width="88"
+                      height="40"
                       rx="9"
-                      fill="rgb(12 74 110 / 0.3)"
-                      stroke="rgb(125 211 252 / 0.8)"
+                      fill="rgb(30 58 138 / 0.3)"
+                      stroke="rgb(147 197 253 / 0.8)"
                       strokeWidth="1"
                     />
                     <rect
                       x="288"
-                      y="158"
-                      width="84"
-                      height="36"
+                      y="154"
+                      width="96"
+                      height="40"
                       rx="9"
-                      fill="rgb(12 74 110 / 0.3)"
-                      stroke="rgb(125 211 252 / 0.8)"
+                      fill="rgb(30 58 138 / 0.3)"
+                      stroke="rgb(147 197 253 / 0.8)"
                       strokeWidth="1"
                     />
                     <rect
                       x="288"
-                      y="228"
-                      width="76"
-                      height="36"
+                      y="224"
+                      width="88"
+                      height="40"
                       rx="9"
-                      fill="rgb(12 74 110 / 0.3)"
-                      stroke="rgb(125 211 252 / 0.8)"
+                      fill="rgb(30 58 138 / 0.3)"
+                      stroke="rgb(147 197 253 / 0.8)"
                       strokeWidth="1"
                     />
                   </g>
@@ -225,63 +239,63 @@ export function KnowledgeGraphSection() {
                     x="88"
                     y="180"
                     textAnchor="middle"
-                    className="fill-white text-[11px] font-semibold"
+                    className="fill-white text-[13px] font-semibold"
                   >
-                    Machine
+                    Intake
                   </text>
                   <text
                     x="220"
                     y="180"
                     textAnchor="middle"
-                    className="fill-white text-[11px] font-semibold"
+                    className="fill-white text-[13px] font-semibold"
                   >
-                    Stop event
+                    Orchestrator
                   </text>
                   <text
                     x="188"
                     y="94"
                     textAnchor="middle"
-                    className="fill-teal-100 text-[9px]"
+                    className="fill-emerald-100 text-[11px] font-medium"
                   >
-                    Sensor pattern
+                    Diagnosis
                   </text>
                   <text
                     x="188"
                     y="266"
                     textAnchor="middle"
-                    className="fill-teal-100 text-[9px]"
+                    className="fill-emerald-100 text-[11px] font-medium"
                   >
-                    Error code
+                    Evidence
                   </text>
                   <text
                     x="326"
                     y="108"
                     textAnchor="middle"
-                    className="fill-sky-100 text-[9px]"
+                    className="fill-blue-100 text-[11px] font-medium"
                   >
-                    Manual §
+                    Source QA
                   </text>
                   <text
                     x="330"
                     y="180"
                     textAnchor="middle"
-                    className="fill-sky-100 text-[9px]"
+                    className="fill-blue-100 text-[11px] font-medium"
                   >
-                    Similar case
+                    Planner
                   </text>
                   <text
                     x="326"
                     y="250"
                     textAnchor="middle"
-                    className="fill-sky-100 text-[9px]"
+                    className="fill-blue-100 text-[11px] font-medium"
                   >
-                    BOM / part
+                    Action pack
                   </text>
                 </svg>
               </div>
               <p className="mt-3 text-center text-sm text-slate-400">
-                Edges can carry weights, provenance, and time — the substrate for
-                GraphRAG-style retrieval over your plant.
+                Each agent decision is grounded in graph links with confidence,
+                provenance, and timestamps for reliable GraphRAG retrieval.
               </p>
             </div>
           </div>

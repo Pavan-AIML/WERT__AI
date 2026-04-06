@@ -1,14 +1,17 @@
 export function HeroKnowledgePreview() {
   return (
     <div
-      className="relative mx-auto w-full max-w-lg lg:mx-0 lg:max-w-none"
+      className="relative mx-auto w-full max-w-xl lg:mx-0 lg:max-w-none"
       aria-hidden
     >
-      <div className="float-soft relative rounded-2xl border border-white/10 bg-white/[0.04] p-6 shadow-2xl shadow-black/40 backdrop-blur-md">
-        <p className="text-center text-xs font-semibold uppercase tracking-wider text-teal-200/90">
-          Live triage context (illustrative)
+      <div className="float-soft relative rounded-2xl border border-white/10 bg-white/[0.04] p-8 shadow-2xl shadow-black/40 backdrop-blur-md">
+        <p className="text-center text-sm font-semibold uppercase tracking-wider text-emerald-200/90">
+          Multi-agent triage flow (illustrative)
         </p>
-        <div className="relative mt-6 aspect-[4/3] w-full">
+        <p className="mt-2 text-center text-[12px] text-slate-300">
+          Orchestrator routes tasks and validates output quality
+        </p>
+        <div className="relative mt-6 aspect-[16/10] w-full">
           <svg
             viewBox="0 0 400 300"
             className="h-full w-full"
@@ -70,14 +73,14 @@ export function HeroKnowledgePreview() {
               <circle
                 cx="72"
                 cy="150"
-                r="22"
+                r="24"
                 className="graph-node-pulse fill-teal-400/25 stroke-teal-300/90"
                 strokeWidth="1.5"
               />
               <circle
                 cx="200"
                 cy="150"
-                r="26"
+                r="29"
                 className="graph-node-pulse fill-sky-400/20 stroke-sky-300/90"
                 style={{ animationDelay: "-0.6s" }}
                 strokeWidth="1.5"
@@ -85,7 +88,7 @@ export function HeroKnowledgePreview() {
               <circle
                 cx="168"
                 cy="104"
-                r="16"
+                r="18"
                 fill="rgb(15 118 110 / 0.35)"
                 stroke="rgb(45 212 191 / 0.9)"
                 strokeWidth="1.2"
@@ -93,7 +96,7 @@ export function HeroKnowledgePreview() {
               <circle
                 cx="168"
                 cy="196"
-                r="16"
+                r="18"
                 fill="rgb(15 118 110 / 0.35)"
                 stroke="rgb(45 212 191 / 0.9)"
                 strokeWidth="1.2"
@@ -101,7 +104,7 @@ export function HeroKnowledgePreview() {
               <circle
                 cx="288"
                 cy="88"
-                r="16"
+                r="18"
                 fill="rgb(12 74 110 / 0.35)"
                 stroke="rgb(56 189 248 / 0.85)"
                 strokeWidth="1.2"
@@ -109,7 +112,7 @@ export function HeroKnowledgePreview() {
               <circle
                 cx="292"
                 cy="150"
-                r="16"
+                r="18"
                 fill="rgb(12 74 110 / 0.35)"
                 stroke="rgb(56 189 248 / 0.85)"
                 strokeWidth="1.2"
@@ -117,7 +120,7 @@ export function HeroKnowledgePreview() {
               <circle
                 cx="288"
                 cy="212"
-                r="16"
+                r="18"
                 fill="rgb(12 74 110 / 0.35)"
                 stroke="rgb(56 189 248 / 0.85)"
                 strokeWidth="1.2"
@@ -127,66 +130,66 @@ export function HeroKnowledgePreview() {
               x="72"
               y="154"
               textAnchor="middle"
-              className="fill-white text-[11px] font-semibold"
+              className="fill-white text-[14px] font-semibold"
             >
-              Asset
+              Intake
             </text>
             <text
               x="200"
               y="154"
               textAnchor="middle"
-              className="fill-white text-[11px] font-semibold"
+              className="fill-white text-[14px] font-semibold"
             >
-              Case
+              Orchestrator
             </text>
             <text
               x="168"
               y="108"
               textAnchor="middle"
-              className="fill-teal-100 text-[9px]"
+              className="fill-teal-100 text-[12px] font-medium"
             >
-              Symptom
+              Diagnosis
             </text>
             <text
               x="168"
               y="200"
               textAnchor="middle"
-              className="fill-teal-100 text-[9px]"
+              className="fill-teal-100 text-[12px] font-medium"
             >
-              Alarm
+              Evidence
             </text>
             <text
               x="288"
               y="92"
               textAnchor="middle"
-              className="fill-sky-100 text-[9px]"
+              className="fill-sky-100 text-[12px] font-medium"
             >
-              Doc
+              Source QA
             </text>
             <text
               x="292"
               y="154"
               textAnchor="middle"
-              className="fill-sky-100 text-[9px]"
+              className="fill-sky-100 text-[12px] font-medium"
             >
-              Past WO
+              Planner
             </text>
             <text
               x="288"
               y="216"
               textAnchor="middle"
-              className="fill-sky-100 text-[9px]"
+              className="fill-sky-100 text-[12px] font-medium"
             >
-              Checklist
+              Action
             </text>
           </svg>
         </div>
-        <ul className="mt-4 flex flex-wrap justify-center gap-2 text-[11px] text-slate-300">
+        <ul className="mt-4 flex flex-wrap justify-center gap-2 text-[12px] text-slate-200">
           <li className="rounded-full border border-white/10 bg-white/5 px-3 py-1">
-            Graph links evidence, not vibes
+            Agent handoff with confidence checks
           </li>
           <li className="rounded-full border border-teal-400/25 bg-teal-500/10 px-3 py-1 text-teal-100">
-            EXIST-ready narrative: structure + AI
+            Cited manuals + work-order evidence
           </li>
         </ul>
       </div>

@@ -3,67 +3,65 @@ export function ProblemSolution() {
     <section id="product" className="mx-auto max-w-6xl px-4 py-20 sm:px-6">
       <div className="text-center">
         <h2 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl">
-          When the line stops, knowledge is scattered
+          Diagnose service cases before dispatch
         </h2>
         <p className="mx-auto mt-4 max-w-3xl text-lg text-muted">
-          Tickets, WhatsApp, PDF manuals, and the one expert who remembers
-          “that fault from 2019” — your team loses time searching instead of
-          fixing. Wert AI concentrates the first response into one guided flow.
+          TriageOS helps service teams determine whether a machine issue can be
+          resolved remotely, requires more evidence, or is ready for onsite
+          dispatch.
         </p>
       </div>
       <div className="mt-16 grid gap-8 lg:grid-cols-2">
         <div className="rounded-2xl border border-border bg-surface p-8 shadow-sm">
           <h3 className="text-base font-semibold uppercase tracking-wide text-red-600/90">
-            Status quo
+            Without TriageOS
           </h3>
           <ul className="mt-4 space-y-3 text-lg text-muted">
             <li className="flex gap-3">
               <span className="text-red-500" aria-hidden>
                 —
               </span>
-              Operator and maintenance describe the problem differently; context
-              is lost by the time help arrives.
+              Incomplete tickets force engineers to assess cases manually.
             </li>
             <li className="flex gap-3">
               <span className="text-red-500" aria-hidden>
                 —
               </span>
-              Mechanics travel without the right parts or tools, or need a second
-              visit.
+              Dispatch decisions happen before diagnostic readiness is confirmed.
             </li>
             <li className="flex gap-3">
               <span className="text-red-500" aria-hidden>
                 —
               </span>
-              Full enterprise field-service suites are heavy for smaller plants.
+              Repeat visits increase SLA risk and technician capacity pressure.
             </li>
           </ul>
         </div>
-        <div className="rounded-2xl border border-teal-200/80 bg-teal-50/50 p-8 shadow-sm">
+        <div className="rounded-2xl border border-emerald-200/70 bg-emerald-50/45 p-8 shadow-sm">
           <h3 className="text-base font-semibold uppercase tracking-wide text-brand-dark">
-            With Wert AI
+            With TriageOS
           </h3>
           <ul className="mt-4 space-y-3 text-lg text-foreground/90">
             <li className="flex gap-3">
               <span className="font-bold text-brand" aria-hidden>
                 +
               </span>
-              Guided intake: symptoms, codes, photos — turned into structured
-              context.
+              Machine context, prior cases, and evidence gaps are assembled
+              before dispatch.
             </li>
             <li className="flex gap-3">
               <span className="font-bold text-brand" aria-hidden>
                 +
               </span>
-              Ranked hypotheses, step-by-step checks, and “what to bring”
-              suggestions grounded in your approved documents.
+              Multi-agent diagnosis returns readiness verdict and repeat-visit
+              risk score.
             </li>
             <li className="flex gap-3">
               <span className="font-bold text-brand" aria-hidden>
                 +
               </span>
-              Start with uploads and light integrations; add CMMS or signals when
-              you are ready.
+              Technician profile, likely spare parts, and checklist are prepared
+              for first-visit success.
             </li>
           </ul>
         </div>

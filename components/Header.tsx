@@ -10,15 +10,15 @@ const nav = [
 
 export function Header() {
   return (
-    <header className="sticky top-0 z-50 border-b border-border/80 bg-surface/90 backdrop-blur-md">
-      <div className="mx-auto flex max-w-7xl flex-col gap-3 px-4 py-3 sm:h-28 sm:flex-row sm:items-center sm:justify-between sm:gap-6 sm:px-6 sm:py-0">
+    <header className="sticky top-0 z-50 border-b border-slate-200/80 bg-white/85 backdrop-blur-md">
+      <div className="mx-auto flex max-w-7xl flex-col gap-3 px-4 py-3 sm:h-24 sm:flex-row sm:items-center sm:justify-between sm:gap-6 sm:px-6 sm:py-0">
         <div className="flex items-center justify-between gap-5">
           <Link
             href="/"
-            className="flex items-center gap-3 text-2xl font-semibold tracking-tight text-foreground"
+            className="flex items-center gap-3 text-2xl font-semibold tracking-tight text-slate-900"
           >
             <span
-              className="relative flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-teal-500 to-cyan-500 text-2xl font-bold text-white shadow-lg shadow-teal-900/20 ring-2 ring-teal-100"
+              className="relative flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-slate-800 to-emerald-700 text-xl font-bold text-white shadow-md shadow-slate-900/25 ring-2 ring-emerald-100"
               aria-hidden
             >
               W
@@ -27,17 +27,17 @@ export function Header() {
           </Link>
           <a
             href="#contact"
-            className="rounded-full bg-brand px-5 py-2.5 text-base font-semibold text-white shadow-sm transition hover:bg-brand-dark sm:hidden"
+            className="rounded-full bg-brand px-5 py-2.5 text-lg font-semibold text-white shadow-sm transition hover:bg-brand-dark sm:hidden"
           >
             Pilot
           </a>
         </div>
-        <nav className="flex flex-wrap gap-x-6 gap-y-1 sm:flex-1 sm:justify-center md:gap-x-9">
+        <nav className="flex flex-wrap items-center gap-2 rounded-full border border-slate-200/90 bg-white/80 p-1.5 shadow-sm sm:flex-1 sm:justify-center">
           {nav.map((item) => (
             <a
               key={item.href}
               href={item.href}
-              className="text-lg font-medium text-muted transition-colors hover:text-foreground"
+              className="relative rounded-full px-4 py-2 text-lg font-semibold tracking-[0.01em] text-slate-600 transition hover:bg-slate-100 hover:text-slate-900"
             >
               {item.label}
             </a>
@@ -45,7 +45,7 @@ export function Header() {
         </nav>
         <a
           href="#contact"
-          className="hidden rounded-full bg-brand px-6 py-3 text-lg font-semibold text-white shadow-sm transition hover:bg-brand-dark sm:inline-flex"
+          className="hidden rounded-full bg-gradient-to-r from-slate-800 to-emerald-700 px-6 py-3 text-lg font-semibold text-white shadow-md shadow-slate-900/25 transition hover:brightness-110 sm:inline-flex"
         >
           Request pilot
         </a>

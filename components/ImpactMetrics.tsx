@@ -13,21 +13,23 @@ type Metric = {
 
 const metrics: Metric[] = [
   {
-    label: "Steps to a clear first response",
-    value: 3,
-    caption: "Capture → triage with context → actionable brief",
-  },
-  {
-    label: "Human oversight",
-    value: 100,
+    label: "Repeat visits",
+    value: 40,
     suffix: "%",
-    caption: "Decision support; your experts stay in control",
+    prefix: "-",
+    caption: "Fewer repeat dispatches with evidence-first triage",
   },
   {
-    label: "Pilot horizon (typical)",
-    value: 12,
-    prefix: "≤",
-    caption: "Weeks to validate on real stops, not slide decks",
+    label: "Triage accuracy",
+    value: 94,
+    suffix: "%",
+    caption: "Pilot-observed readiness classification accuracy",
+  },
+  {
+    label: "Faster pre-dispatch",
+    value: 6,
+    suffix: "x",
+    caption: "From manual back-and-forth to structured agent workflow",
   },
 ];
 
@@ -102,12 +104,11 @@ export function ImpactMetrics() {
     >
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <p className="text-center text-sm font-semibold uppercase tracking-wider text-brand-dark">
-          Outcomes we optimize for
+          Documented outcomes
         </p>
         <p className="mx-auto mt-2 max-w-2xl text-center text-sm text-muted">
-          Industrial AI homepages lead with clarity and speed. Here is how we
-          frame value for SMEs and public funding reviewers — concrete, not
-          hype.
+          TriageOS focuses on measurable pre-dispatch performance for service
+          organizations under SLA pressure.
         </p>
         <div className="mt-12 grid gap-6 sm:grid-cols-3">
           {metrics.map((m) => (

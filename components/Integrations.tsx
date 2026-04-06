@@ -1,36 +1,107 @@
 export function Integrations() {
-  const items = [
-    "PDF & Word manuals",
-    "Work orders (CSV / export)",
-    "REST APIs (CMMS / ticketing)",
-    "Optional: OPC UA / MQTT via edge (read-only)",
-  ];
+  const platforms = ["SAP", "SNOW", "SF", "RMB", "S/4"];
+
   return (
-    <section className="mx-auto max-w-6xl px-4 py-20 sm:px-6">
-      <div className="rounded-3xl bg-hero px-8 py-14 text-white sm:px-14">
-        <h2 className="text-3xl font-bold sm:text-4xl">
-          Integrations that match how SMEs actually work
+    <section className="border-y border-border bg-surface py-24">
+      <div className="mx-auto max-w-7xl px-4 sm:px-8">
+        <h2 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl">
+          Works with existing service platforms.
         </h2>
-        <p className="mt-4 max-w-3xl text-lg text-slate-300">
-          We do not ask you to rip out Outlook or your ticketing tool on day one.
-          Start with documents and exports; connect systems when the value is
-          proven — same phased mindset you see in mature industrial SaaS, but
-          scoped for smaller teams.
+        <p className="mt-4 max-w-3xl text-lg text-muted">
+          TriageOS sits between ticket creation and dispatch decision. It
+          integrates into your existing service infrastructure — no workflow
+          disruption required.
         </p>
-        <ul className="mt-10 grid gap-3 sm:grid-cols-2">
-          {items.map((label) => (
-            <li
-              key={label}
-              className="flex items-center gap-3 rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-base"
-            >
-              <span
-                className="h-2 w-2 shrink-0 rounded-full bg-brand"
-                aria-hidden
-              />
-              {label}
-            </li>
-          ))}
-        </ul>
+
+        <div className="mt-12 grid items-stretch gap-8 lg:grid-cols-[minmax(0,1fr)_auto_minmax(0,1fr)]">
+          <div className="flex h-full flex-col rounded-2xl border border-border bg-slate-50 p-6 sm:p-7">
+            <p className="text-[11px] font-bold uppercase tracking-[0.15em] text-slate-500">
+              Without TriageOS
+            </p>
+            <ul className="mt-4 space-y-2.5">
+              {[
+                { title: "Ticket Created", sub: "Incomplete alarm data" },
+                { title: "Manual Assessment", sub: "Engineer interprets alone" },
+                { title: "Blind Dispatch", sub: "No root cause confirmed" },
+                { title: "Repeat Visit", sub: "Higher return rate risk" },
+              ].map((item, idx) => (
+                <li
+                  key={item.title}
+                  className={`rounded-lg border px-4 py-3.5 ${
+                    idx >= 2
+                      ? "border-rose-200 bg-rose-50"
+                      : "border-slate-200 bg-white"
+                  }`}
+                >
+                  <p className="text-[15px] font-semibold text-slate-800">{item.title}</p>
+                  <p className="text-[11px] uppercase tracking-wide text-slate-500">
+                    {item.sub}
+                  </p>
+                </li>
+              ))}
+            </ul>
+            <p className="mt-auto pt-5 text-[11px] font-semibold uppercase tracking-[0.15em] text-slate-500">
+              Service platform layer
+            </p>
+            <div className="mt-2 flex flex-wrap gap-2">
+              {platforms.map((p) => (
+                <span
+                  key={`without-${p}`}
+                  className="rounded-md border border-slate-200 bg-white px-2.5 py-1.5 text-[11px] font-semibold text-slate-600"
+                >
+                  {p}
+                </span>
+              ))}
+            </div>
+          </div>
+
+          <div className="hidden items-center justify-center lg:flex">
+            <span className="rounded-md bg-blue-600 px-3 py-1 text-[10px] font-bold uppercase tracking-[0.12em] text-white">
+              TriageOS
+            </span>
+          </div>
+
+          <div className="flex h-full flex-col rounded-2xl border border-slate-800/70 bg-hero p-6 text-white sm:p-7">
+            <p className="text-[11px] font-bold uppercase tracking-[0.15em] text-slate-400">
+              With TriageOS
+            </p>
+            <ul className="mt-4 space-y-2.5">
+              {[
+                { title: "Ticket Created", sub: "Alarm + context ingested" },
+                { title: "TriageOS Analysis", sub: "Evidence gathered automatically" },
+                { title: "Verdict Issued", sub: "Remote or dispatch + risk score" },
+                { title: "Informed Dispatch", sub: "First-time fix rate improved" },
+              ].map((item, idx) => (
+                <li
+                  key={item.title}
+                  className={`rounded-lg border px-4 py-3.5 ${
+                    idx === 3
+                      ? "border-emerald-400/35 bg-emerald-500/10"
+                      : "border-white/15 bg-white/[0.03]"
+                  }`}
+                >
+                  <p className="text-[15px] font-semibold text-white">{item.title}</p>
+                  <p className="text-[11px] uppercase tracking-wide text-slate-400">
+                    {item.sub}
+                  </p>
+                </li>
+              ))}
+            </ul>
+            <p className="mt-auto pt-5 text-[11px] font-semibold uppercase tracking-[0.15em] text-slate-400">
+              Service platform layer
+            </p>
+            <div className="mt-2 flex flex-wrap gap-2">
+              {platforms.map((p) => (
+                <span
+                  key={`with-${p}`}
+                  className="rounded-md border border-white/20 bg-white/5 px-2.5 py-1.5 text-[11px] font-semibold text-slate-300"
+                >
+                  {p}
+                </span>
+              ))}
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );

@@ -46,22 +46,23 @@ export function ContactForm() {
         <div className="grid gap-12 lg:grid-cols-2 lg:gap-16">
           <div>
             <h2 className="text-3xl font-bold tracking-tight text-foreground">
-              Request a pilot or partnership conversation
+              Run a focused pilot with your service organization
             </h2>
             <p className="mt-4 text-muted">
-              Share your role, company, and what you would like to validate in
-              an 8–12 week pilot. We respond to serious manufacturing and partner
-              inquiries within a few business days.
+              Start with one machine family, 100 service cases, and a 6–8 week
+              scope to measure repeat visits and triage decision time.
             </p>
             <p className="mt-6 text-sm text-muted">
-              For EXIST / research collaborations, mention your institution or
-              project context in the message.
+              We can scope your pilot within one week.
             </p>
           </div>
           <form
             onSubmit={handleSubmit}
             className="flex flex-col gap-4 rounded-2xl border border-border bg-background p-6 shadow-sm"
           >
+            <p className="rounded-lg border border-amber-200 bg-amber-50 px-3 py-2 text-sm text-amber-800">
+              Please fill in all fields so we can scope your pilot accurately.
+            </p>
             <div>
               <label
                 htmlFor="name"
@@ -121,7 +122,7 @@ export function ContactForm() {
                 required
                 rows={4}
                 className="mt-1 w-full rounded-lg border border-border bg-surface px-3 py-2 text-sm outline-none ring-brand/30 focus:ring-2"
-                placeholder="e.g. We run a 40-person metalworking shop near Munich and want to pilot triage on two CNC lines."
+                placeholder="e.g. We run OEM field service across 12 sites and want to pilot TriageOS for spindle alarm dispatch decisions."
               />
             </div>
             <button

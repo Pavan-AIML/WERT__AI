@@ -3,30 +3,28 @@ export function Partners() {
     <section id="partners" className="bg-background py-20">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <h2 className="text-center text-4xl font-bold tracking-tight text-foreground sm:text-5xl">
-          Built with pilots, not slides alone
+          Built for high-stakes service environments
         </h2>
         <p className="mx-auto mt-4 max-w-3xl text-center text-lg text-muted">
-          At Wert AI we are engaging manufacturing companies, integrators, and
-          university partners for{" "}
+          TriageOS is best for teams with recurring diagnostic ambiguity, SLA
+          pressure, and repeat-visit risk.{" "}
           <strong className="font-medium text-foreground">
-            defined, non-binding pilots
+            Not ideal for very low-volume dispatch operations.
           </strong>
-          . If you are exploring EXIST-style funding or strategic collaboration,
-          we would like to hear from you.
         </p>
         <div className="mt-12 grid gap-6 md:grid-cols-3">
           {[
             {
-              title: "Manufacturers",
-              text: "SME plants with mixed machine parks and real downtime pain — co-design the triage flow with us.",
+              title: "OEM service teams",
+              text: "Machine builders and aftermarket teams handling field-installed equipment with incomplete incoming case data.",
             },
             {
-              title: "OEMs & integrators",
-              text: "After-sales and service teams who want faster remote diagnosis without a multi-year IT project.",
+              title: "Industrial field service",
+              text: "Service organizations with technician dispatch complexity, repeat visits, and response-time commitments.",
             },
             {
-              title: "Research & networks",
-              text: "TUM, Fraunhofer-style collaboration, clusters — we align with EU data residency and serious security roadmaps.",
+              title: "Service operations leaders",
+              text: "Managers who need predictable triage quality across shifts, regions, and technician skill levels.",
             },
           ].map((card) => (
             <div
