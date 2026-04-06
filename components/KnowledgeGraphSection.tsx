@@ -143,8 +143,9 @@ export function KnowledgeGraphSection() {
                       className="graph-edge-animate"
                       style={{ animationDelay: "-1.05s" }}
                       strokeDasharray="5 9"
-                      d="M 220 176 L 320 176"
+                      d="M 220 166 L 320 168"
                     />
+
                     <path
                       className="graph-edge-animate"
                       style={{ animationDelay: "-1.4s" }}
