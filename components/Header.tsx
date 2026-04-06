@@ -2,6 +2,7 @@ import Link from "next/link";
 
 const nav = [
   { href: "#product", label: "Product" },
+  { href: "#innovation", label: "Knowledge graph" },
   { href: "#how", label: "How it works" },
   { href: "#partners", label: "Partners" },
   { href: "#contact", label: "Contact" },

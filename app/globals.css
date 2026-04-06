@@ -6,6 +6,8 @@
   --muted: #64748b;
   --brand: #0d9488;
   --brand-dark: #0f766e;
+  --brand-glow: rgba(20, 184, 166, 0.45);
+  --accent-sky: #38bdf8;
   --surface: #ffffff;
   --border: #e2e8f0;
   --hero: #0c1222;
@@ -27,8 +29,109 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-sans);
+  font-size: 16.5px;
+  line-height: 1.6;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-hero-blob,
+  .animate-hero-blob-alt,
+  .graph-edge-animate,
+  .graph-node-pulse,
+  .float-soft,
+  .marquee-track {
+    animation: none !important;
+  }
+}
+
+@keyframes hero-blob {
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+    opacity: 0.35;
+  }
+  50% {
+    transform: translate(4%, 6%) scale(1.08);
+    opacity: 0.5;
+  }
+}
+
+@keyframes hero-blob-alt {
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+    opacity: 0.25;
+  }
+  50% {
+    transform: translate(-5%, -4%) scale(1.12);
+    opacity: 0.4;
+  }
+}
+
+@keyframes graph-dash {
+  to {
+    stroke-dashoffset: -24;
+  }
+}
+
+@keyframes graph-pulse {
+  0%,
+  100% {
+    opacity: 0.55;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.06);
+  }
+}
+
+@keyframes float-soft {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+.animate-hero-blob {
+  animation: hero-blob 18s ease-in-out infinite;
+}
+
+.animate-hero-blob-alt {
+  animation: hero-blob-alt 22s ease-in-out infinite;
+}
+
+.graph-edge-animate {
+  animation: graph-dash 2.2s linear infinite;
+}
+
+.graph-node-pulse {
+  animation: graph-pulse 2.8s ease-in-out infinite;
+}
+
+.float-soft {
+  animation: float-soft 5s ease-in-out infinite;
+}
+
+@keyframes marquee-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.marquee-track {
+  animation: marquee-scroll 28s linear infinite;
 }

@@ -8,10 +8,10 @@ export function Integrations() {
   return (
     <section className="mx-auto max-w-6xl px-4 py-20 sm:px-6">
       <div className="rounded-3xl bg-hero px-8 py-14 text-white sm:px-14">
-        <h2 className="text-2xl font-bold sm:text-3xl">
+        <h2 className="text-3xl font-bold sm:text-4xl">
           Integrations that match how SMEs actually work
         </h2>
-        <p className="mt-4 max-w-2xl text-slate-400">
+        <p className="mt-4 max-w-3xl text-lg text-slate-300">
           We do not ask you to rip out Outlook or your ticketing tool on day one.
           Start with documents and exports; connect systems when the value is
           proven — same phased mindset you see in mature industrial SaaS, but
@@ -21,7 +21,7 @@ export function Integrations() {
           {items.map((label) => (
             <li
               key={label}
-              className="flex items-center gap-3 rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-sm"
+              className="flex items-center gap-3 rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-base"
             >
               <span
                 className="h-2 w-2 shrink-0 rounded-full bg-brand"

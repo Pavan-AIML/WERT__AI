@@ -2,10 +2,10 @@ export function ProblemSolution() {
   return (
     <section id="product" className="mx-auto max-w-6xl px-4 py-20 sm:px-6">
       <div className="text-center">
-        <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
+        <h2 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl">
           When the line stops, knowledge is scattered
         </h2>
-        <p className="mx-auto mt-4 max-w-2xl text-muted">
+        <p className="mx-auto mt-4 max-w-3xl text-lg text-muted">
           Tickets, WhatsApp, PDF manuals, and the one expert who remembers
           “that fault from 2019” — your team loses time searching instead of
           fixing. Wert AI concentrates the first response into one guided flow.
@@ -13,10 +13,10 @@ export function ProblemSolution() {
       </div>
       <div className="mt-16 grid gap-8 lg:grid-cols-2">
         <div className="rounded-2xl border border-border bg-surface p-8 shadow-sm">
-          <h3 className="text-sm font-semibold uppercase tracking-wide text-red-600/90">
+          <h3 className="text-base font-semibold uppercase tracking-wide text-red-600/90">
             Status quo
           </h3>
-          <ul className="mt-4 space-y-3 text-muted">
+          <ul className="mt-4 space-y-3 text-lg text-muted">
             <li className="flex gap-3">
               <span className="text-red-500" aria-hidden>
                 —
@@ -40,10 +40,10 @@ export function ProblemSolution() {
           </ul>
         </div>
         <div className="rounded-2xl border border-teal-200/80 bg-teal-50/50 p-8 shadow-sm">
-          <h3 className="text-sm font-semibold uppercase tracking-wide text-brand-dark">
+          <h3 className="text-base font-semibold uppercase tracking-wide text-brand-dark">
             With Wert AI
           </h3>
-          <ul className="mt-4 space-y-3 text-foreground/90">
+          <ul className="mt-4 space-y-3 text-lg text-foreground/90">
             <li className="flex gap-3">
               <span className="font-bold text-brand" aria-hidden>
                 +

@@ -2,10 +2,10 @@ export function Partners() {
   return (
     <section id="partners" className="bg-background py-20">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
-        <h2 className="text-center text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
+        <h2 className="text-center text-4xl font-bold tracking-tight text-foreground sm:text-5xl">
           Built with pilots, not slides alone
         </h2>
-        <p className="mx-auto mt-4 max-w-2xl text-center text-muted">
+        <p className="mx-auto mt-4 max-w-3xl text-center text-lg text-muted">
           At Wert AI we are engaging manufacturing companies, integrators, and
           university partners for{" "}
           <strong className="font-medium text-foreground">
@@ -33,8 +33,8 @@ export function Partners() {
               key={card.title}
               className="rounded-2xl border border-border bg-surface p-6 shadow-sm"
             >
-              <h3 className="font-semibold text-foreground">{card.title}</h3>
-              <p className="mt-2 text-sm leading-relaxed text-muted">
+              <h3 className="text-xl font-semibold text-foreground">{card.title}</h3>
+              <p className="mt-2 text-base leading-relaxed text-muted">
                 {card.text}
               </p>
             </div>

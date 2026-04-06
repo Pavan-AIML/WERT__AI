@@ -23,10 +23,10 @@ export function HowItWorks() {
       className="border-y border-border bg-surface py-20"
     >
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
-        <h2 className="text-center text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
+        <h2 className="text-center text-4xl font-bold tracking-tight text-foreground sm:text-5xl">
           How it works
         </h2>
-        <p className="mx-auto mt-4 max-w-2xl text-center text-muted">
+        <p className="mx-auto mt-4 max-w-3xl text-center text-lg text-muted">
           Three steps from chaos to a clear first response — without replacing
           your CMMS or ticketing on day one.
         </p>
@@ -37,10 +37,10 @@ export function HowItWorks() {
               className="relative rounded-2xl border border-border bg-background p-8"
             >
               <span className="text-4xl font-bold text-brand/25">{s.n}</span>
-              <h3 className="mt-2 text-xl font-semibold text-foreground">
+              <h3 className="mt-2 text-2xl font-semibold text-foreground">
                 {s.title}
               </h3>
-              <p className="mt-3 text-sm leading-relaxed text-muted">
+              <p className="mt-3 text-base leading-relaxed text-muted">
                 {s.body}
               </p>
             </li>
